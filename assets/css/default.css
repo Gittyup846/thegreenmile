@@ -1,305 +1,218 @@
-@font-face {
-  font-family: "Johnston Bold";
-  src: url("../fonts/JohnstonITCStd-Bold.woff") format("woff"), url("../fonts/JohnstonITCStd-Bold.otf") format("opentype");
-  font-display: block;
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Johnston Bold Italic";
-  src: url("../fonts/JohnstonITCStd-BoldIta.woff") format("woff"), url("../fonts/JohnstonITCStd-BoldIta.otf") format("opentype");
-  font-display: block;
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Johnston Medium";
-  src: url("../fonts/JohnstonITCStd-Medium.woff") format("woff"), url("../fonts/JohnstonITCStd-Medium.otf") format("opentype");
-  font-display: block;
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Johnston Medium Italic";
-  src: url("../fonts/JohnstonITCStd-MediumIta.woff") format("woff"), url("../fonts/JohnstonITCStd-MediumIta.otf") format("opentype");
-  font-display: block;
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Johnston Light";
-  src: url("../fonts/JohnstonITCStd-Light.woff") format("woff"), url("../fonts/JohnstonITCStd-Light.otf") format("opentype");
-  font-display: block;
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Johnston Light Italic";
-  src: url("../fonts/JohnstonITCStd-LightIta.woff") format("woff"), url("../fonts/JohnstonITCStd-LightIta.otf") format("opentype");
-  font-display: block;
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Helvetica LT";
-  src: url("../fonts/HelveticaLT45Light.ttf") format("truetype");
-  font-display: block;
-  font-weight: normal;
-  font-style: normal;
-}
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  position: relative;
-  font-family: "Helvetica LT";
-  font-size: 11px;
-  letter-spacing: 0.05em;
-  line-height: 1.3;
-}
-
 * {
   box-sizing: border-box;
-}
-
-a {
-  color: white;
-  text-decoration: none;
 }
 
 img {
   width: 100%;
 }
 
-.ml-body {
-  font-size: 11px;
-}
-
-.ml-body--yellow {
-  background-color: #f8f6e8;
-}
-
-.ml-body--grey {
-  background-color: #f8f8f8;
-}
-
-.ml-body--closer .ml-shop-area {
-  width: calc(100% - 144px);
-  margin-left: 144px;
-}
-.ml-body--closer .ml-filters {
-  padding-left: 144px;
-}
-.ml-body--closer .ml-sidebar {
-  width: 144px;
-}
-
-.ml-shop-container {
-  display: flex;
-  margin-top: 6px;
-  padding: 0;
-}
-
-.ml-shop-area {
-  width: calc(100% - 210px);
-  margin-left: 210px;
-  padding-right: 20px;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.ml-shop-area img {
-  padding-bottom: 10px;
-}
-
-.ml-product-blocks {
-  background-color: #F4F4F4;
-  width: calc(25% - 10px);
-  height: 250px;
-}
-
-.ml-filters {
-  padding-left: 210px;
-  padding-bottom: 10px;
+.im-body {
   width: 100%;
-}
-
-.ml-filter-label i {
-  transform: rotate(-90deg);
-  display: inline-block;
-}
-.ml-filter-label span {
-  color: grey;
-  font-style: italic;
-  padding-left: 10px;
-}
-.ml-filter-label:hover {
-  cursor: pointer;
-}
-
-.ml-filter-label--open i {
-  transform: rotate(0);
-}
-
-.ml-filter-col {
-  width: 50%;
-  padding-right: 10px;
-}
-.ml-filter-col li:before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 2px;
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 0px;
-  border: 1px solid #000;
-}
-.ml-filter-col li:hover {
-  cursor: pointer;
-}
-.ml-filter-col li:hover:before {
-  background-color: black;
-}
-.ml-filter-col .ml-sort {
-  padding-top: 12px;
-}
-.ml-filter-col .ml-sort li:before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 2px;
-  border: none;
-  background-color: transparent;
-}
-.ml-filter-col .ml-sort .active:before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 2px;
-  border: none;
-  background-color: black;
-}
-
-.ml-filter-col--sort {
-  padding-left: 10px;
-}
-
-.ml-filter-col-hidden {
-  display: none;
-  width: 25%;
-}
-
-.ml-filter-col-hidden--open {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-}
-
-.ml-filter-title {
-  padding-top: 12px;
-  opacity: 0.6;
-}
-.ml-filter-title:before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 2px;
-  background-color: black;
-}
-.ml-filter-title:hover {
-  cursor: pointer;
-}
-.ml-filter-title:hover:before {
-  background-color: black;
-}
-
-.ml-filter-contianer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 20px;
-}
-.ml-filter-contianer ul {
-  list-style-type: none;
+  height: 100%;
   padding: 0;
   margin: 0;
-}
-.ml-filter-contianer .ml-filter-indent {
-  margin-left: 15px;
+  background-color: Black;
 }
 
-.ml-sidebar {
-  width: 210px;
-  padding: 12px;
+.im-image-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+
+.im-background--top {
+  width: 120%;
+  height: 120vh;
   position: fixed;
+  top: 0;
   left: 0;
-  top: 44px;
+  z-index: 0;
+  background-image: url(../images/untitled-7.jpg);
+  background-size: cover;
+  background-position: bottom center;
 }
 
-.ml-main-category:hover {
+.im-background--bottom {
+  width: 120%;
+  height: 120vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-image: url(../images/untitled-7.gif);
+  background-size: cover;
+  opacity: 0.2;
+  background-position: bottom center;
+  animation: background-move 0.6s infinite;
+}
+
+@keyframes background-move {
+  0%{
+    margin-top: -0.2;
+    margin-left: -0.2;
+  }
+25%{
+  margin-top: -0.2%;
+  margin-left: 0.2%;
+}
+50%{
+  margin-top: 0.2%;
+  margin-left: 0.2%;
+}
+75%{
+  margin-top: 0.2%;
+  margin-left: -0.2%;
+}
+100%{
+  margin-top: -0.2%;
+  margin-left: -0.2%;
+}
+}
+
+.im-character:hover {
   cursor: pointer;
 }
-.ml-main-category:before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 2px;
-}
 
-.ml-main-category--spaced {
-  padding-bottom: 12px;
-  margin-left: -15px;
+.im-character--percy {
+  width: 14%;
+  overflow: hidden;
+  position: absolute;
+  top:200;
+  left:0;
+  z-index: 100;
 }
-
-.ml-main-category--active:before {
-  background-color: black;
-}
-
-.ml-sub-category {
+.im-character--percy #percy-dead {
   display: none;
 }
-.ml-sub-category ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 15px;
-}
-.ml-sub-category ul li:before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 2px;
-}
-
-.active:before {
-  background-color: black;
-}
-
-.ml-sub-category--open {
+.im-character--percy #percy {
   display: block;
 }
-
-.ml-header-image {
-  width: 100%;
+.im-character--percy-dead #percy-dead {
+  display: block;
 }
-.ml-header-image img {
-  width: 100%;
+.im-character--percy-dead #percy {
+  display: none;
 }
 
-/*# sourceMappingURL=default.css.map */
+.im-character--paul {
+  width: 25%;
+  overflow: hidden;
+  position: absolute;
+  top: 420;
+  left: 140;
+  z-index: 100;
+}
+.im-character--paul-well #paul {
+  display: none;
+}
+.im-character--paul-well #paul-well {
+  display: block;
+}
+.im-character--paul #paul {
+  display: block;
+}
+.im-character--paul #paul-well {
+  display: none;
+}
+
+.im-character--mrjingels {
+  width: 5%;
+  overflow: hidden;
+  position: absolute;
+  left: 100;
+  bottom: 4;
+  z-index: 100;
+}
+.im-character--mrjingels-well #mrjingels {
+  display: none;
+}
+.im-character--mrjingels-well #mrjingels-well {
+  display: block;
+}
+.im-character--mrjingels #mrjingels {
+  display: block;
+}
+.im-character--mrjingels #mrjingels-well {
+  display: none;
+}
+
+.im-character--melinda {
+  width: 27%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -20;
+  right: 100;
+  z-index: 100;
+}
+.im-character--melinda-well #melinda {
+  display: none;
+}
+.im-character--melinda-well #melinda-well {
+  display: block;
+}
+.im-character--melinda #melinda {
+  display: block;
+}
+.im-character--melinda #melinda-well {
+  display: none;
+}
+
+@keyframes size-change {
+  0% {transform: scale(1);}
+
+  50% {transform: scale(1.5);}
+
+  100% {transform: scale(1);}
+}
+
+.im-scale {
+  animation: size-change 3s;
+}
+
+.im-video-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes video-fade {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.implaying .im-video-container {
+  animation: video-fade 13s forwards;
+}
+
+.im-video {
+  width: 100%;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}

@@ -4,197 +4,47 @@
   <meta http-equiv="Cache-Control" content="no-store">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="pinterest-rich-pin" content="false">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta property="og:title" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:url" content="">
-  <meta property="og:description" content="">
-  <meta property="og:type" content="">
-  <meta property="og:image" content="">
-  <meta name="description" content="">
-  <meta name="author" content="https://www.meide.studio/">
-  <meta name="keywords" content="">
-  <title></title>
+  <title>Green Mile</title>
   <link rel="stylesheet" href="assets/css/default.css?v=3.0">
-  <script src="assets/js/vendor.js?v=1.0"></script>
-  <script src="assets/js/default.js?v=2.0"></script>
   <link rel="shortcut icon" type="image/png" href="favicon.ico?v=1.0">
-  <script src="https://kit.fontawesome.com/74a0c6ef69.js" crossorigin="anonymous"></script>
+  <script src="assets/js/vendor.js"></script>
+  <script src="assets/js/default.js"></script>
 </head>
-<body class="ml-body">
-  <div class="ml-header-image">
-    <img src="./assets/header.png" alt="">
+
+<body class="im-body">
+  <div class="im-image-container">
+    <div class="im-background im-background--top"></div>
+    <div class="im-background im-background--bottom"></div>
   </div>
 
-  <div class="ml-filters">
-    <div class="ml-filter-contianer">
-      <div class="ml-filter-col">
-        <div class="ml-filter-label" id="ml-toggle-filter">
-          Refine by Metal or Stone <i class="fal fa-angle-down"></i>
-          <!-- <span>Metals selected</span> <span>Stones selected</span> -->
-        </div>
-      </div>
-      <div class="ml-filter-col ml-filter-col--sort">
-        <!-- <div class="ml-filter-label" id="ml-toggle-filter">
-          Sort by <i class="fal fa-angle-down"></i>
-        </div> -->
-      </div>
-      <div class="ml-filter-col ml-filter-col-hidden">
-        <div class="ml-filter-title">Metal</div>
-        <ul class="ml-filter-indent">
-          <li>Sterling Silver</li>
-          <li>Gold Plated</li>
-          <li>Platinum</li>
-          <li>9ct Yellow Gold</li>
-          <li>9ct White Gold</li>
-          <li>9ct Rose Gold</li>
-          <li>9ct Red Gold</li>
-          <li>9ct Black Gold</li>
-          <li>14ct Yellow Gold</li>
-          <li>14ct White Gold</li>
-          <li>18ct Yellow Gold</li>
-          <li>18ct White Gold</li>
-          <li>18ct Rose Gold</li>
-        </ul>
-      </div>
-      <div class="ml-filter-col ml-filter-col-hidden">
-        <div class="ml-filter-title">Stone</div>
-        <ul class="ml-filter-indent">
-          <li>Amethyst</li>
-          <li>Black Diamond</li>
-          <li>Black Spinel</li>
-          <li>Blue Sapphire</li>
-          <li>Blue Topaz</li>
-          <li>Citrine</li>
-          <li>Emerald</li>
-          <li>Green Sapphire</li>
-          <li>Grey Diamond</li>
-          <li>Midnight Sapphire</li>
-          <li>Morganite</li>
-          <li>Onyx</li>
-          <li>Peridot</li>
-          <li>Pink Sapphire</li>
-          <li>Pink Tourmaline</li>
-          <li>Reclaimed White Diamond</li>
-          <li>Rhodolite Garnet</li>
-          <li>Rose Quartz</li>
-          <li>Ruby</li>
-          <li>Ruby & Emerald</li>
-          <li>Sapphire</li>
-          <li>Smoky Quartz</li>
-          <li>Thai Garnet</li>
-          <li>White Diamond</li>
-          <li>None</li>
-        </ul>
-      </div>
-      <div class="ml-filter-col ml-filter-col-hidden">
-        <div class="ml-filter-title">Other</div>
-        <ul class="ml-filter-indent">
-          <li>Engraveable</li>
-          <li>Traceable</li>
-          <li>Under $200</li>
-        </ul>
-      </div>
-      <!-- <div class="ml-filter-col ml-filter-col-hidden ml-filter-col-sort">
-        <ul class="ml-sort ml-filter-indent">
-          <li>Featured</li>
-          <li>Lowest price</li>
-          <li class="active">Highest price</li>
-        </ul>
-      </div> -->
-    </div>
+  <div class="im-character--percy im-character im-character--percy-dead">
+    <img id="percy" src="./assets/images/Percy.png" alt="">
+    <img id="percy-dead" src="./assets/images/Percy-dead.png" alt="">
   </div>
 
-  <div class="ml-shop-container">
-    <div class="ml-sidebar">
-      <div class="ml-navigation">
-        <div class="ml-main-category ml-main-category--spaced">Browse</div>
-        <div class="ml-main-category ml-main-category-all ml-main-category--active">All</div>
-        <div class="ml-main-category">New arrivals</div>
-        <div class="ml-main-category ml-main-category-collections" id="ml-toggle-collections">Ceremonial</div>
-        <div class="ml-main-category ml-main-category-rings" id="ml-toggle-rings">Rings</div>
-        <div class="ml-sub-category ml-sub-category-rings">
-          <ul>
-            <li>All</li>
-            <li>Engagement</li>
-            <li>Wedding</li>
-            <li class="active">Signets</li>
-            <li>Ring sets</li>
-            <li>Mens</li>
-          </ul>
-        </div>
-        <div class="ml-main-category ml-main-category-earrings" id="ml-toggle-earrings">Earrings</div>
-        <div class="ml-sub-category ml-sub-category-earrings">
-          <ul>
-            <li class="active">All</li>
-            <li>Drops & hoops</li>
-            <li>Studs</li>
-            <li>Micro studs</li>
-          </ul>
-        </div>
-        <div class="ml-main-category ml-main-category-necklaces" id="ml-toggle-necklaces">Necklaces</div>
-        <div class="ml-sub-category ml-sub-category-necklaces">
-          <ul>
-            <li>All</li>
-          </ul>
-        </div>
-        <div class="ml-main-category ml-main-category-bracelets" id="ml-toggle-bracelets">Bracelets</div>
-        <div class="ml-sub-category ml-sub-category-bracelets">
-          <ul>
-            <li>All</li>
-            <li class="active">Anklets</li>
-            <li>Bangles</li>
-          </ul>
-        </div>
-        <!-- <div class="ml-main-category ml-main-category-letters" id="ml-toggle-letters">Letters</div>
-        <div class="ml-sub-category ml-sub-category-letters">
-          <ul>
-            <li>All</li>
-          </ul>
-        </div> -->
-        <div class="ml-main-category ml-main-category-collections" id="ml-toggle-collections">Collections</div>
-        <div class="ml-sub-category ml-sub-category-collections">
-          <ul>
-            <li>All</li>
-            <li class="active">Gloria</li>
-            <li>Halycon</li>
-            <li>Collaborations</li>
-            <li>Pearls</li>
-            <li>Letters</li>
-            <li>Mens</li>
-            <li>Objects</li>
-          </ul>
-        </div>
-        <!-- <div class="ml-main-category ml-main-category-collaborations" id="ml-toggle-collaborations">Collaborations</div>
-        <div class="ml-sub-category ml-sub-category-collaborations">
-          <ul>
-            <li class="active">All</li>
-            <li>Artist 1</li>
-            <li>Artist 2</li>
-          </ul>
-        </div> -->
-        <div class="ml-main-category ml-main-category-more" id="ml-toggle-more">Gift cards</div>
-        <div class="ml-main-category ml-main-category-more" id="ml-toggle-more">Archive</div>
-      </div>
-    </div>
-    <div class="ml-shop-area">
-      <img src="./assets/products.png" alt="">
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
-      <div class="ml-product-blocks"></div>
+  <div class="im-character--paul im-character im-character--paul-well">
+    <img id="paul" src="./assets/images/paul.png" alt="">
+    <img id="paul-well" src="./assets/images/paul-well.png" alt="">
+  </div>
+
+  <div class="im-character--mrjingels im-character im-character--mrjingels-well">
+    <img id="mrjingels" src="./assets/images/mrjingels.png" alt="">
+    <img id="mrjingels-well" src="./assets/images/mrjingels-well.png" alt="">
+  </div>
+
+  <div class="im-character--melinda im-character im-character--melinda-well">
+    <img id="melinda" src="./assets/images/melinda.png" alt="">
+    <img id="melinda-well" src="./assets/images/melinda-well.png" alt="">
+  </div>
+
+  <div class="im-video-container">
+    <div class="im-video">
+      <video id="imvideo" width="400" height="300" preload="preload" autoplay playsinline>
+        <source src="assets/Images/cure.mp4" type="video/mp4">
+        <source src="assets/Images/cure-mobile.mp4" type="video/mp4">
+        <source src="assets/Images/cure.webm" type="video/webm">
+      </video>
     </div>
   </div>
 </body>
-</html>
+<html>
