@@ -27,7 +27,7 @@ img {
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: url(../images/untitled-7.jpg);
+  background-image: url(../images/background-image.jpg);
   background-size: cover;
   background-position: bottom center;
 }
@@ -39,7 +39,7 @@ img {
   top: 0;
   left: 0;
   z-index: 10;
-  background-image: url(../images/untitled-7.gif);
+  background-image: url(../images/background-effect.gif);
   background-size: cover;
   opacity: 0.2;
   background-position: bottom center;
