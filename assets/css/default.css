@@ -72,6 +72,42 @@ img {
 .im-character:hover {
   cursor: pointer;
 }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.im-character .dead {
+  display: none;
+}
+.im-character--paul .alive {
+  display: block;
+  opacity: 0;
+  animation: fade-in 1s 2s forwards;
+}
+.im-character--melinda .alive {
+  display: block;
+  opacity: 0;
+  animation: fade-in 1s 2s forwards;
+}
+.im-character--mrjingels .alive {
+  display: block;
+  opacity: 0;
+  animation: fade-in 1s 2s forwards;
+}
+.im-character--percy .alive {
+  opacity: 1;
+}
+.im-character--dead .dead {
+  display: block;
+}
+.im-character--dead .alive {
+  display: none;
+}
+
 
 .im-character--percy {
   width: 14%;
@@ -81,38 +117,15 @@ img {
   left:0;
   z-index: 100;
 }
-.im-character--percy #percy-dead {
-  display: none;
-}
-.im-character--percy #percy {
-  display: block;
-}
-.im-character--percy-dead #percy-dead {
-  display: block;
-}
-.im-character--percy-dead #percy {
-  display: none;
-}
 
 .im-character--paul {
   width: 25%;
   overflow: hidden;
   position: absolute;
-  top: 420;
+  top: 380;
   left: 140;
   z-index: 100;
-}
-.im-character--paul-well #paul {
-  display: none;
-}
-.im-character--paul-well #paul-well {
-  display: block;
-}
-.im-character--paul #paul {
-  display: block;
-}
-.im-character--paul #paul-well {
-  display: none;
+  pointer-events: none;
 }
 
 .im-character--mrjingels {
@@ -122,39 +135,21 @@ img {
   left: 100;
   bottom: 4;
   z-index: 100;
-}
-.im-character--mrjingels-well #mrjingels {
-  display: none;
-}
-.im-character--mrjingels-well #mrjingels-well {
-  display: block;
-}
-.im-character--mrjingels #mrjingels {
-  display: block;
-}
-.im-character--mrjingels #mrjingels-well {
-  display: none;
+  pointer-events: none;
 }
 
 .im-character--melinda {
   width: 27%;
   overflow: hidden;
   position: absolute;
-  bottom: -20;
+  bottom: -50;
   right: 100;
   z-index: 100;
+  pointer-events: none;
 }
-.im-character--melinda-well #melinda {
-  display: none;
-}
-.im-character--melinda-well #melinda-well {
-  display: block;
-}
-.im-character--melinda #melinda {
-  display: block;
-}
-.im-character--melinda #melinda-well {
-  display: none;
+
+.im-character--dead {
+  pointer-events: auto;
 }
 
 @keyframes size-change {
